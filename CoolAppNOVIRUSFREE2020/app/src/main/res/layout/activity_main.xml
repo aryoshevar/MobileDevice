@@ -1,0 +1,150 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/relativeLayout"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#404040">
+
+    <androidx.appcompat.widget.Toolbar
+        android:id="@+id/toolbar3"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="#000000"
+        android:minHeight="?attr/actionBarSize"
+        android:theme="?attr/actionBarTheme"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <ImageView
+        android:id="@+id/imageView4"
+        android:layout_width="65dp"
+        android:layout_height="57dp"
+        android:layout_marginStart="4dp"
+        android:layout_marginTop="4dp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@drawable/apptoko"/>
+
+    <TextView
+        android:id="@+id/TextView"
+        android:layout_width="326dp"
+        android:layout_height="64dp"
+        android:gravity="center"
+        android:text="Silakan isi survey untuk melanjutkan"
+        android:textColor="#FFFFFF"
+        android:textSize="20sp"
+        app:layout_constraintBottom_toBottomOf="@+id/toolbar3"
+        app:layout_constraintStart_toEndOf="@+id/imageView4"
+        app:layout_constraintVertical_bias="0.0"/>
+
+    <RadioGroup
+        android:id="@+id/radioGroup"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+        <TextView
+            android:id="@+id/TextView2"
+            android:layout_width="247dp"
+            android:layout_height="39dp"
+            android:layout_marginStart="24dp"
+            android:layout_marginTop="80dp"
+            android:text="Apa gender anda?"
+            android:textColor="#FFFFFF"
+            android:textSize="24sp"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"/>
+
+        <RadioButton
+            android:id="@+id/Lakik"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Lakik"
+            android:textColor="#FFFFFF"
+            android:textSize="20sp"
+            tools:layout_editor_absoluteX="24dp"
+            tools:layout_editor_absoluteY="127dp"/>
+
+        <RadioButton
+            android:id="@+id/Betina"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Betina"
+            android:textColor="#FFFFFF"
+            android:textSize="20sp"
+            tools:layout_editor_absoluteX="26dp"
+            tools:layout_editor_absoluteY="175dp"/>
+
+        <RadioButton
+            android:id="@+id/Hitam"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Hitam"
+            android:textColor="#FFFFFF"
+            android:textSize="20sp"
+            tools:layout_editor_absoluteX="26dp"
+            tools:layout_editor_absoluteY="223dp"/>
+
+        <RadioButton
+            android:id="@+id/Asean"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Asean"
+            android:textColor="#FFFFFF"
+            android:textSize="20sp"
+            tools:layout_editor_absoluteX="26dp"
+            tools:layout_editor_absoluteY="271dp"/>
+
+        <Button
+            android:id="@+id/realButton"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Download"
+            android:layout_marginTop="180dp"
+            android:layout_gravity="center"
+            tools:layout_editor_absoluteX="160dp"
+            tools:layout_editor_absoluteY="540dp"/>
+
+        <ImageButton
+            android:id="@+id/fakeButton"
+            android:layout_width="235dp"
+            android:layout_height="80dp"
+            android:layout_gravity="center"
+            android:scaleType="fitCenter"
+            app:srcCompat="@drawable/download"
+            tools:layout_editor_absoluteX="67dp"
+            tools:layout_editor_absoluteY="596dp" />
+    </RadioGroup>
+
+    <!-- popup_image_layout.xml -->
+    <RelativeLayout
+        android:id="@+id/myrelativeLayout"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        tools:layout_editor_absoluteX="-16dp"
+        tools:layout_editor_absoluteY="4dp">
+
+        <ImageView
+            android:id="@+id/Scammed"
+            android:layout_width="360sp"
+            android:layout_height="360sp"
+            android:layout_marginStart="24dp"
+            android:layout_marginTop="160dp"
+            android:scaleType="fitCenter"
+            android:src="@drawable/placeholder" />
+
+        <!-- Tambahan: Tombol untuk menutup pop-up -->
+        <ImageButton
+            android:id="@+id/closeButton"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="340dp"
+            android:layout_marginTop="170dp"
+            android:background="?android:attr/selectableItemBackgroundBorderless"
+            android:contentDescription="Close"
+            android:src="@android:drawable/btn_dialog" />
+    </RelativeLayout>
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>
+
